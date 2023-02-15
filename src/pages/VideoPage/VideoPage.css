@@ -1,0 +1,14 @@
+.page-background {
+	background-color: black !important;
+	width: 100% !important;
+	height: 100% !important;
+}
+
+.THEOplayer {
+	width: 40%;
+	margin: 0 auto;
+}
+.video-js.vjs-16-9 {
+	padding-top: 28.12%;
+	width: 40%;
+}

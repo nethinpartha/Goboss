@@ -1,0 +1,143 @@
+.account-logout-icon-wrapper {
+    height: 45%;
+    width: "";
+    background: #949cb0;
+    border-radius: 50%;
+    padding: 1rem;
+    cursor: pointer;
+
+    .figure-icon {
+        height: 26px;
+        width: 26px;
+        margin-bottom: 2rem;
+    }
+}
+
+.headerAuthOnhover {
+    .figure-caption {
+        color: #ffffff;
+        font-size: 14px;
+        padding: 10px 0;
+        text-transform: capitalize;
+        
+    }
+}
+
+.headercomp {
+    padding: 1rem 1rem 0.5rem 1rem;
+}
+
+.search-bar-wrapper input:focus {
+    outline: 0;
+}
+
+.search-bar-wrapper ::-webkit-input-placeholder {
+    // font-size: 20px;
+    color: #ffffff;
+}
+
+.figure-wrapper {
+    margin-bottom: 0;
+}
+
+.header-categories {
+    color: #ffffff !important;
+    font-size: 1rem;
+    // margin: 0 1rem;
+}
+
+.category-wrapper {
+    padding-left: 10%;
+}
+
+.authuser-btn-style,
+.authuser-btn-style:active,
+.authuser-btn-style:focus,
+.authuser-btn-style:hover {
+    color: #ffffff;
+    border: none;
+    text-transform: uppercase;
+    font-size: 11px;
+    padding: 0.8rem 1.2rem;
+}
+
+.avatar-icon {
+    height: 44px;
+    width: 44px;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+.header-logo-setup {
+    .headerv1-logo {
+        margin-right: 0rem;
+    }
+}
+
+@media screen and (width: 768px) {
+    .header-categories {
+        font-size: 0.8rem;
+        margin: 0 0.5rem;
+    }
+
+    .display-header-category {
+        min-width: 40%;
+    }
+
+    .header-categories {
+        font-size: 0.8rem !important;
+        margin: 0 !important;
+    }
+}
+
+// mobile devices
+@media screen and (max-width: 640px) {
+    .searchform-container {
+        display: flex;
+    }
+    .account-logout-icon-wrapper {
+        height: 37%;
+        width: 75%;
+        padding: 7px;
+        display: flex;
+        margin-right: 1rem;
+        background: #949cb0;
+        border-radius: 50%;
+        position: relative;
+
+        .figure-icon {
+            height: 28px;
+            padding: 3px;
+        }
+    }
+
+    .headerAuthOnhover {
+        .figure-caption {
+            color: #ffffff;
+            font-size: 14px;
+            padding: 10px 0;
+            text-transform: capitalize;
+            margin: -3px;
+            cursor: pointer;
+        }
+    }
+}
+@media screen and (max-width: 1023px) {
+    .avatar-icon {
+        margin-left: 0.8rem;
+        margin-right: 3rem;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .avatar-icon {
+       height: 34px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .avatar-icon {
+        margin-left: 0.3rem;
+        margin-right: 1rem;
+    }
+}

@@ -1,0 +1,302 @@
+.main {
+  .cast-episodes-tray{
+    width: 50%;
+    margin: auto;
+    padding-bottom: 30px;
+  }
+  .contentDetails_trayname {
+    font: 400 25px Inter;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 0 0 25px 50px;
+  }
+  .carousel-tag li:first-child .main-div {
+    &:hover {
+      .video-div {
+        left: 0;
+      }
+    }
+  }
+  .cast-episodes-tray{
+    border: none;
+  }
+
+  .nav-tabs .nav-link.active {
+            /* Fallback: Set a background color. */
+            color: #e1540f;
+            /* Create the gradient. */
+  
+            /* Set the background size and repeat properties. */
+            background-size: 100%;
+            background-repeat: repeat;
+  
+            /* Use the text as a mask for the background. */
+            /* This will show the gradient as a text color rather than element bg. */
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            -moz-text-fill-color: transparent;
+          }
+          .nav-fill .nav-item,
+          .nav-fill > .nav-link {
+            color: white;
+            font-weight: bold;
+            border: none;
+          }
+  .main-div {
+    .img-div {
+      img {
+        height: 200px;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 3px;
+        display: block;
+        z-index: 1;
+      }
+    }
+
+    .content-div {
+      padding: 5px 5px 0px;
+      p{
+      list-style-type: none;
+      }
+      p:first-child {
+        font: 400 12px/15px Montserrat;
+        text-align: left;
+        color: #949cb0;
+        padding: 0 0px 6px 0;
+      }
+
+      p:last-child {
+        font: bold 15px/15px Montserrat;
+        text-align: left;
+        color: #ffffff;
+        margin-top: 10px;
+      }
+      .movie_title {
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        max-width: 120px;
+      }
+    }
+
+    .video-div {
+      top: 0;
+      left: 0;
+      -webkit-transform: translate3d(0, 0, 4px);
+      z-index: 9999;
+      width: 100%;
+      background: #131722;
+      box-shadow: 6px 3px 12px #362f2fd1;
+
+      transform: scale(0, 0);
+      height: auto;
+      min-height: 100%;
+      width: 100%;
+      transition: all 0.2s ease-in;
+      visibility: hidden;
+      opacity: 0;
+
+      .myVideo {
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+      }
+
+      img {
+        width: 15px;
+        height: 15px;
+        object-fit: fill;
+        cursor: pointer;
+      }
+
+      .film-description {
+        font: normal normal normal 10px Inter;
+        color: #949cb0;
+        margin-bottom: 8px;
+        text-align: justify;
+      }
+
+      .film-name {
+        font-size: 14px;
+        font-family: Inter;
+        font-weight: 400;
+        color: #ffffff;
+        cursor: pointer;
+      }
+
+      .film-Certificate {
+        flex-wrap: wrap;
+
+        p {
+          font: normal normal normal 10px Inter;
+          margin: 0;
+          color: #ffffff;
+        }
+
+        .certificateText {
+          font: normal normal normal 10px Inter;
+          margin: 0;
+          color: #949cb0;
+        }
+      }
+
+      .subtitles {
+        float: right;
+        text-align: center;
+      }
+
+      .play-btn {
+        font: 400 11px/28px Inter;
+        color: #ffffff;
+      }
+    }
+
+    &:hover {
+      .video-div {
+        transform: scale(1);
+        -webkit-transform: translate3d(0, 0, 4px);
+        z-index: 9999;
+        visibility: visible;
+        opacity: 1;
+
+        .muteButton {
+          position: absolute;
+          right: 11px;
+          bottom: 25px;
+          width: 25px;
+          height: 25px;
+        }
+
+        border-radius: 10px;
+        width: 140%;
+        left: -20%;
+        height: auto;
+      }
+    }
+  }
+
+  .alice-carousel__stage-item {
+    margin: 0 20px;
+  }
+
+  .alice-carousel__next-btn-wrapper,
+  .alice-carousel__prev-btn-wrapper {
+    position: absolute;
+    top: 31%;
+
+    background: #dcd8d8;
+    border-radius: 25px;
+    width: 25px;
+    text-align: center;
+  }
+
+  .alice-carousel__next-btn-wrapper {
+    right: 0px;
+  }
+
+  .alice-carousel__prev-btn-wrapper {
+    left: 0px;
+  }
+
+  .react-multi-carousel-track {
+    li:last-child {
+      margin-right: 8%;
+    }
+  }
+    .react-multi-carousel-track {
+  li {
+    list-style-type: none;
+}
+  }
+
+  @media screen and (max-width: 768px) {
+    .main-div {
+      
+      &:hover {
+        .video-div {
+          visibility: hidden;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .react-multi-carousel-track {
+      overflow-y: hidden !important;
+      overflow-x: auto !important;
+      scrollbar-width: none; /* Firefox */
+      -ms-overflow-style: none;
+    }
+    .react-multi-carousel-track::-webkit-scrollbar {
+      width: 0;
+      height: 0;
+    }
+    .main-div {
+      width: inherit;
+      ul > li {
+    list-style-type: none;
+}
+      .content-div {
+        width: inherit;
+        padding: 0;
+        p:last-child {
+          font: 500 12px/12px Montserrat;
+        }
+        .movie_title {
+          margin-top: 2px !important;
+        }
+      }
+      .img-div {
+        width: inherit;
+        img {
+          width: inherit;
+          height: 150px;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 640px) {
+    .contentDetails_trayname {
+      font: 500 16px Inter;
+      margin: 0 0 10px 20px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .carousel-tag {
+      padding-left: 0px;
+    }
+     .contentDetails_trayname {
+      font: 500 16px Inter;
+      margin: 0 0 10px 20px;
+    }
+  }
+
+  .carousel-tag {
+    margin-left: 2rem;
+    .react-multi-carousel-track {
+      .react-multi-carousel-item
+        .react-multi-carousel-item--active
+        .carouselItem {
+        z-index: 1;
+      }
+    }
+    @media screen and (max-width: 768px) {
+      margin-left: 0;
+    }
+  }
+}
+
+@media screen and (min-width: 1890px) and (max-width: 3200px) {
+  .main {
+    .main-div {
+      .img-div {
+        img {
+          height: 330px;
+          object-fit: cover;
+          display: block;
+        }
+      }
+    }
+  }
+}

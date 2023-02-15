@@ -1,0 +1,27 @@
+.confirmation-alert .modal-header,
+.confirmation-alert .modal-body {
+  border: none;
+}
+
+.confirmation-alert {
+  .modal-header {
+    .close {
+      color: #000000;
+      span {
+        color: #000000;
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
+.confirmation-alert .modal-content {
+  background-color: #1d2429;
+  text-align: center;
+  /*  border-radius: 2rem;
+   box-shadow: rgba(233, 220, 220, 82%) -5px 14px 12px 8px;
+   background-image: linear-gradient(to right bottom, rgba(26, 23, 21, 0.8), rgba(26, 23, 21, 0.8)),
+     url(../../../assets/wall.jpg); */
+  position: relative;
+  background-size: cover;
+  background-position: top;
+}

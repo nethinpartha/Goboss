@@ -1,0 +1,11 @@
+/* Normalize */
+@import "~normalize-scss/sass/normalize";
+@import "./signinstyle.scss";
+
+.resetpassword {
+    width: 100% !important;
+    min-height: 100vh !important;
+    .headerShadow {
+        position: relative;
+    }
+}

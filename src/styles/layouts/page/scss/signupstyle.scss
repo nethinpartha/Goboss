@@ -1,0 +1,15 @@
+.SignUp-background,
+.Subscription-activated {
+    width: 100% !important;
+    min-height: 100vh !important;
+
+    .headerShadow {
+        position: relative;
+        background: transparent linear-gradient(180deg, #e1540f 0%, #fbb08b 100%) 0% 0% no-repeat padding-box;
+    }
+}
+
+.upgrade {
+    background: transparent;
+    display: block !important;
+}

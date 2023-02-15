@@ -1,0 +1,118 @@
+/* Normalize */
+@import "~normalize-scss/sass/normalize";
+
+@import "../../styles/variables";
+@import "../Auth/SignIn/style.scss";
+
+.payment-background {
+    width: 100% !important;
+    min-height: 100vh !important;
+    .headerShadow {
+        position: relative;
+    }
+    .upgrade {
+        padding: 0;
+        background-color: transparent;
+    }
+    .simpleContainer {
+        p {
+            font: normal normal normal 15px / 15px Inter, sans-serif;
+            letter-spacing: 0.07px;
+            color: #585858;
+            text-align: center;
+        }
+        h2 {
+            font: normal normal bold 28px / 34px Inter, sans-serif;
+            letter-spacing: 0.28px;
+            color: #585858;
+            text-align: center;
+            border: none;
+            width: 100%;
+            margin: 1% 0 2% 0;
+        }
+    }
+}
+.payment-ease-text h2,
+.payment-ease-text p {
+    color: #cccccc;
+}
+.regFormContainer .promobtn button {
+    background: #e1540f;
+    height: 40px;
+    margin: 1% 1%;
+    span {
+        color: white;
+    }
+}
+.regFormContainer h2 {
+    text-align: center;
+}
+
+.price-section {
+    background: #f4f4f4 0% 0% no-repeat padding-box;
+    display: flex;
+    font: normal normal normal 15px / 19px Inter, sans-serif;
+    letter-spacing: 0.07px;
+    color: #585858;
+    margin-bottom: 4%;
+    .price-left-section {
+        margin: 1% 2%;
+        padding-left: 1rem;
+        font-weight: bold;
+        div {
+            padding: 8% 0;
+        }
+    }
+    .price-right-section {
+        position: relative;
+        right: -62%;
+        margin-top: 5%;
+        font-weight: bold;
+        color: #e1540f;
+    }
+    .price-right-section:hover {
+        text-transform: underline;
+    }
+}
+
+.card-price-section {
+    display: flex;
+    background: #e1540f 0% 0% no-repeat padding-box;
+    height: 40px;
+    border: none;
+    border-radius: 0.2rem;
+    .card-left-section {
+        text-align: left;
+        font: normal normal normal 15px/19px Inter, serif;
+        letter-spacing: 0.15px;
+        color: #ffffff;
+        margin: 2%;
+    }
+    .card-right-section {
+        position: relative;
+        color: #ffffff;
+        font: normal normal normal 15px/19px Inter, serif;
+        font-size: 24px;
+        right: -50%;
+        padding-top: 2%;
+    }
+}
+
+.emphasise {
+    font: normal normal bold 16px/23px Inter, serif;
+    letter-spacing: 0.16px;
+    margin-bottom: 0.25rem;
+}
+.payment-ease-text {
+    padding-bottom: 2rem;
+}
+.gutter-padd {
+    padding-right: 10%;
+    line-height: 24px;
+}
+
+@media screen and (max-width: $small-below) {
+    .promobtn input {
+        width: 100%;
+    }
+}

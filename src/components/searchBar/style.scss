@@ -1,0 +1,74 @@
+// @import "~bootstrap/scss/bootstrap";
+/* Normalize */
+@import "~normalize-scss/sass/normalize";
+
+@import "../../styles/variables";
+
+.movie-list-container aside nav {
+    width: 50%;
+    will-change: auto !important;
+}
+
+.search-bar-flex {
+    width: 100%;
+    display: flex;
+    align-content: space-around;
+    background: hsla(0, 0%, 100%, 0.3803921568627451) 0 0 no-repeat padding-box;
+    padding: 0.5rem;
+    margin-right: 1rem;
+    border-radius: 5px;
+    color: #ffffff;
+}
+
+.search-input-bar {
+    background: transparent;
+    border: none;
+    width: 75%;
+    color: #ffffff;
+    opacity: 1;
+}
+
+.search-bar-search-icon-wrapper {
+    width: 20%;
+    text-align: right;
+}
+
+@media screen and (min-width: 430px) {
+    .search-input-bar {
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .search-bar-flex {
+        height: 30px;
+
+        .search-input-bar {
+            font-size: 12px;
+        }
+    }
+
+    .search-bar-search-icon-wrapper {
+        margin-top: -8px;
+    }
+
+
+
+    .search-bar-search-icon {
+        width: 48%;
+    }
+}
+
+
+
+@media screen and (width: 320px) {
+    .search-bar-search-icon {
+        width: 64%;
+    }
+}
+
+@media screen and (width: 375px) {
+    .search-bar-search-icon {
+        width: 59%;
+    }
+}

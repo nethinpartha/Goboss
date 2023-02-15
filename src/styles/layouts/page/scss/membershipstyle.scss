@@ -1,0 +1,287 @@
+@import "~normalize-scss/sass/normalize";
+@import "../../..//variables";
+
+body {
+    height: 120%;
+}
+
+
+
+.membership-background {
+    width: 100% !important;
+    min-height: 100vh !important;
+
+    .headerShadow {
+        position: relative;
+        background: transparent linear-gradient(180deg, #e1540f 0%, #fbb08b 100%) 0% 0% no-repeat padding-box;
+    }
+
+    .benefits-wrapper {
+        p {
+            text-align: left;
+        }
+    }
+
+    .container {
+        padding: 8px;
+        width: auto;
+        margin-top: 2%;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-bottom: 2%;
+        min-height: 80vh;
+    }
+
+    p {
+        font: normal normal normal 15px / 19px Inter, sans-serif;
+        letter-spacing: 0.07px;
+        color: #ffffff;
+        border: none;
+        margin: 6px;
+    }
+
+    h2 {
+        font: normal normal bold 28px / 34px Inter, sans-serif;
+        letter-spacing: 0.28px;
+        color: #ffffff;
+        text-align: center;
+        border: none;
+        width: 100%;
+        margin: 1% 0 2% 0;
+    }
+
+    .card-container {
+
+        // border: 1px solid lightgrey;
+        .cards {
+            border: 2px solid lightgrey;
+        }
+
+        .cards:first-child {
+            margin-right: 1rem;
+        }
+
+        .cards:hover {
+            border: 4px solid #e1540f;
+            background: transparent;
+
+            .card-button {
+                display: initial;
+                color: #f9f4f3;
+            }
+        }
+    }
+
+    .chooseplan-header {
+        margin-bottom: 2rem;
+    }
+
+    .card-container {
+        display: flex;
+        min-height: 35vh;
+        text-align: center;
+        margin-top: 14%;
+
+        .cards {
+            width: 50%;
+            min-height: 40vh;
+
+            p {
+                text-align: center;
+            }
+
+            .card-title {
+                font: normal normal 800 18px / 36px Inter, sans-serif;
+                color: #e1540f;
+            }
+
+            .card-text {
+                font: normal normal 300 10px / 14px Inter, sans-serif;
+                color: #ffffff;
+                margin: 8%;
+            }
+
+            .card-price {
+                font: normal normal normal 20px / 36px Inter, sans-serif;
+                color: #ffffff;
+
+                .currency {
+                    font: normal normal 300 15px / 19px Inter, sans-serif;
+                    letter-spacing: 0.15px;
+                    color: #ffffff;
+                }
+            }
+
+            .card-button {
+                display: none;
+                background: #e1540f 0% 0% no-repeat padding-box;
+                text-transform: uppercase;
+                border: none;
+                font: normal normal bold 14px / 17px Inter, sans-serif;
+                letter-spacing: 0.14px;
+                text-align: center;
+                padding: 4% 18%;
+                margin-top: 20%;
+                border-radius: 2.8%;
+            }
+        }
+    }
+}
+
+.checkmark-group--icon {
+    -webkit-align-self: flex-start;
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+    color: #e50914;
+    -webkit-box-flex: 0;
+    -webkit-flex: none;
+    -moz-box-flex: 0;
+    -ms-flex: none;
+    flex: none;
+    height: 18px;
+    width: 18px;
+}
+
+.checkmark-group--text {
+    margin-left: 10px;
+    margin-top: 2px;
+}
+
+.active {
+    // background: #fbb08b !important;
+}
+
+@media screen and (max-width: $small-below) {
+    .membership-background {
+        h2 {
+            font: normal normal bold 14px / 17px Inter, sans-serif;
+            text-align: center;
+        }
+
+        p {
+            font: normal normal normal 10px/12px Inter, sans-serif;
+            color: rgb(204, 204, 204);
+        }
+
+        .card-container {
+            display: initial;
+            border: none;
+
+            .card:hover {
+                background-color: #ddd;
+            }
+
+            .cards {
+                width: 100%;
+                display: flex;
+                min-height: auto;
+                padding: 2%;
+                margin: 4% 0;
+                border: 2px solid #e1540f;
+
+                .card-button {
+                    display: none !important;
+                }
+
+                .rightsection {
+                    width: 60%;
+                }
+
+                .leftsection {
+                    width: 40%;
+                }
+
+                .card-title {
+                    margin-top: 0;
+                    font: normal normal bold 15px/19px Inter, sans-serif;
+                    letter-spacing: 0.15px;
+                    color: #e1540f;
+                    text-align: left;
+                }
+
+                .card-text {
+                    text-align: left;
+                    margin: 2%;
+                    font: normal normal 300 10px/12px Inter, sans-serif;
+                    letter-spacing: 0.1px;
+                }
+
+                .card-price {
+                    .main {
+                        text-align: center;
+                        font: normal normal normal 25px/30px Inter, sans-serif;
+                        letter-spacing: 0.25px;
+                        color: #ffffff;
+                    }
+                }
+            }
+
+            // min-height: 38vh;
+            // .cards:nth-of-type(1),
+            // .cards:nth-of-type(2),
+            // .cards:nth-of-type(3),
+            // .cards:nth-of-type(4) {
+            //     background: white;
+            // }
+            // .cards {
+            //     min-height: 20vh;
+            //     .card-button {
+            //         font-size: 6px;
+            //         background: white;
+            //         color: #e1540f;
+            //         border: 1px solid #e1540f;
+            //         padding: 4%;
+            //     }
+            //     .card-price {
+            //         .currency {
+            //             font-size: 6px;
+            //         }
+            //     }
+            //     .card-title {
+            //         min-height: 20%;
+            //         text-align: center;
+            //         top: 10%;
+            //         background: #e1540f;
+            //         span {
+            //             position: relative;
+            //             top: 3vh;
+            //             color: white;
+            //         }
+            //     }
+            //     .card-title,
+            //     .card-text,
+            //     .main {
+            //         font: normal normal bold 10px/12px
+            //             Inter, sans-serif;
+            //     }
+            //     .card-text {
+            //         display: none;
+            //     }
+            // }
+        }
+    }
+
+    .checkmark-group--icon {
+        height: 11px;
+        width: 11px;
+    }
+}
+
+/* ----------- iPad Pro" ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 834px) and (max-device-width: 1112px) and (-webkit-min-device-pixel-ratio: 2) {
+    body {
+        height: 100%;
+    }
+
+    .membership-background {
+        .card-container {
+            min-height: 24vh;
+
+            .cards {
+                min-height: 22vh;
+            }
+        }
+    }
+}

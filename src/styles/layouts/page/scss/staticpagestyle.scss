@@ -1,0 +1,44 @@
+.staticpage-background {
+    // background: url("./../../assets/graphics/background-layout.png") no-repeat center center/cover;
+    // background-color: #131722;
+    width: 100% !important;
+    min-height: 100vh !important;
+    .headerShadow {
+        position: relative;
+    }
+    .container {
+        width: 100%;
+        margin: 4% 8%;
+        p,
+        h1,
+        h2,
+        h3,
+        h4,
+        div {
+            color: #ffffff;
+            text-align: left;
+        }
+        p {
+            margin: 0.5rem 0 0 0;
+            font-size: 16px;
+        }
+        a {
+            padding-right: 6px;
+        }
+    }
+}
+body {
+    height: auto;
+}
+.my-anchor-css-class {
+    color: rgb(255, 81, 47);
+}
+
+@media screen and (max-width: 576px) {
+    .staticpage-background {
+        .container {
+            width: 90%;
+            margin: 4% 6% 4% 2%;
+        }
+    }
+}

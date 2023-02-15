@@ -1,0 +1,466 @@
+/* Normalize */
+@import "~normalize-scss/sass/normalize";
+
+@import "../../styles/variables";
+
+p {
+    letter-spacing: 0px;
+    color: #ffffff;
+    opacity: 1;
+    text-align: center;
+    font-size: 12px;
+}
+
+.sub-type {
+    font-size: inherit;
+    margin: 0 0 0 24px;
+    padding: 18px 0;
+    text-align: justify;
+    color: #ffffff;
+}
+
+.hero-banner {
+    display: flex;
+    z-index: 1;
+    flex-direction: row;
+    min-height: 70vh;
+    background: rgba(255, 255, 255, 0.082);
+    background-size: cover;
+    background-position: top right 10px;
+    margin-bottom: 40px;
+    border-radius: 2px solid #000000;
+    padding-left: 76px;
+    backdrop-filter: blur(33px);
+    -webkit-backdrop-filter: blur(33px);
+    padding-top: 63px;
+
+}
+
+.hero-banner:before {
+    content: " ";
+    opacity: 0.69;
+    display: block;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    background-attachment: fixed;
+    filter: blur(8px);
+    z-index: 0;
+}
+
+
+.desc-img {
+
+    z-index: 1;
+    display: relative;
+    color: white;
+    font-weight: bold;
+    border-radius: 15px solid;
+}
+
+.hero-banner .form-check {
+    padding: 0px;
+}
+
+
+.ratingsSection {
+
+    z-index: 2;
+
+    width: 60%;
+
+    h2 {
+        text-align: left;
+        margin: 0 0 0 24px;
+
+        font: 33px bold Inter, Sans-serif;
+        letter-spacing: 0px;
+        color: #ffffff;
+        opacity: 1;
+        border: none;
+    }
+}
+
+.ratings-wrapper {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.ratings-value {
+    font: normal normal 600 30px Inter, sans-serif;
+    letter-spacing: 0px;
+    color: #fcc537;
+    opacity: 1;
+    padding: 0 0 0 22px;
+}
+
+.logWrapper {
+    border: 3px solid #ffab0f;
+    width: 48%;
+    height: 51%;
+    border-radius: 50%;
+}
+
+.like-logo-new {
+    height: 17px;
+}
+
+.like-logo-new1 {
+    height: 16px;
+}
+
+.action-panel {
+    margin: 0 110px 23px 29px;
+    padding: 9px 40px 22px 35px;
+    background-color: #202020;
+    border-radius: 5rem;
+    box-shadow: #000000;
+    width: 23rem;    
+}
+
+.action-panel .btn-group {
+    display: flex;
+}
+
+.logoWrapper {
+    cursor: pointer;
+    float: right;
+    border: 2px solid #ffab0f;
+    border-radius: 50%;
+    height: 33px;
+    width: 36px;
+}
+
+.player-logo {
+    margin: 0 11px;
+}
+
+.like-logo {
+    height: 15px;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.icon-link {
+    display: flex;
+    width: 20%;
+    text-align: center;
+    padding: 4px;
+    color: #ffffff;
+    opacity: 0.95;
+
+    span {
+        padding-left: 12px;
+    }
+}
+
+.genres {
+    margin: 8px;
+    background: #bebebe 0 no-repeat padding-box;
+    border-radius: 7px;
+    border: none;
+    opacity: 1;
+    backdrop-filter: blur(37px);
+    -webkit-backdrop-filter: blur(30px);
+    width: 93px;
+    font: normal normal medium 17px/22px inter, sans-serif;
+    color: white;
+    height: 40px;
+
+    span {
+        top: 11px;
+        position: absolute;
+        right: 16px;
+        color: white;
+    }
+}
+
+// Movie types css section
+.list-group-horizontal .list-group-item:first-of-type {
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 4px;
+    background: transparent;
+    border: none;
+    color: #ffffff;
+}
+
+.list-group-horizontal .list-group-item:last-child {
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 0;
+}
+
+.deck {
+    padding-bottom: 27px;
+}
+
+.form-check label {
+
+    margin-bottom: 0;
+}
+
+.list-inline {
+    display: flex;
+    flex-direction: row;
+}
+
+.form-check label input[type="checkbox"] {
+    opacity: 0;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .action-panel {
+        width: 24rem;
+        border-radius: 3rem;
+    }
+}
+
+@media screen and (max-width: $small-below) {
+    .like-logo-new {
+        height: 20px;
+    }
+
+    .like-logo-new1 {
+        height: 20px;
+    }
+
+    .sub-type {
+        padding: 6px 1rem 0 0;
+    }
+
+    .sub-type1 {
+        text-align: center;
+    }
+
+    .new {
+        h2 {
+            text-align: center;
+            margin: 13px 0 0 24px;
+            font: 33px bold Inter, Sans-serif;
+            letter-spacing: 0px;
+            color: #ffffff;
+            opacity: 1;
+            border: none;
+        }
+    }
+
+    .action-panel {
+        padding: 14px;
+    }
+
+    .blackLayer {
+        display: none;
+    }
+
+    .desc-img {
+        text-align: center;
+        left: 69%;
+
+        img {
+            width: 34%;
+        }
+    }
+
+    .ratings-value {
+        font: 24px;
+    }
+
+    .list-inline {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero-banner .btn-group {
+        display: flex;
+    }
+
+    .hero-banner,
+    .hero-banner:before {
+        width: 100%;
+        min-height: 66vh;
+        display: flex;
+        flex-direction: column;
+        padding-left: 4px;
+        padding-top: 26px;
+        background-image: none;
+        box-shadow: none;
+
+    }
+
+    .ratingsSection {
+        width: 91%;
+
+        h2 {
+            font: 33px;
+        }
+    }
+
+    .ratings-wrapper {
+        display: flex;
+    }
+
+    .form-check label {
+        display: flex;
+    }
+
+    .icon-link span {
+        margin-bottom: 10px;
+        padding-left: 0px;
+    }
+
+    .list-inline {
+        flex-direction: row;
+    }
+
+    .genres {
+        margin: 1px;
+    }
+
+    .form-check label {
+        height: 26px;
+    }
+
+    .max-width {
+        width: 100%;
+    }
+
+    .logoWrapper {
+        float: right;
+        border: 3px solid #ffab0f;
+        border-radius: 50%;
+        height: 38px;
+        width: 43px;
+    }
+
+    .like-logo {
+        height: 17px;
+        opacity: 1;
+        cursor: pointer;
+    }
+}
+
+.btn-animated {
+    animation: moveInButton 0.5s ease-out 0.75s;
+    animation-fill-mode: backwards;
+}
+
+.btn-top-animated {
+    animation: moveInTopButton 0.5s ease-out 0.75s;
+    animation-fill-mode: backwards;
+}
+
+@keyframes moveInButton {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInTopButton {
+    0% {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 375px) {
+    body {
+        margin: -28px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .action-panel-container{
+display: flex;
+justify-content: center;
+    }
+    .action-panel {
+        margin: 1rem 0 1rem 1rem;
+        padding: 14px;
+    }
+}
+
+@media only screen and (max-width: 599px) {
+    .like-logo-new {
+        height: 15px;
+    }
+
+    .like-logo-new1 {
+        height: 15px;
+    }
+
+    .new {
+        h2 {
+            margin: 9px 0 0 24px;
+        }
+    }
+
+    .ratingsSection {
+        font-size: 10px;
+    }
+
+    .logoWrapper {
+        height: 26px;
+        width: 29px;
+    }
+
+    .action-panel {
+        width: 14rem;
+    }
+
+    .sub-type {
+        padding: 6px 1rem 0 0;
+    }
+
+    .sub-type:first-child {
+        text-align: center;
+    }
+
+    .ratingsSection h2 {
+        text-align: center;
+        font-size: 24px;
+    }
+
+    .like-logo {
+        height: 12px;
+    }
+
+    .player-logo {
+        margin: 0;
+        padding-left: 3px;
+    }
+
+    .hero-banner .btn-group {
+        justify-content: flex-start;
+    }
+
+    p {
+        font-size: 10px;
+    }
+}
+
+
+
+@media only screen and (max-width: 320px) {
+    .hero-banner {
+        .genre-setup {
+            margin-right: -2.5rem;
+        }
+    }
+
+}

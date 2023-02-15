@@ -1,0 +1,65 @@
+@import "~normalize-scss/sass/normalize";
+
+@import "../../../../styles/variables";
+
+.Collapsible {
+    background: #363a43;
+    border-radius: 2px;
+    color: #e6e6e6;
+    padding: 0;
+}
+.filter-wrapper {
+    .filter-title {
+        padding: 4%;
+        color: #ffffff;
+        display: flex;
+        justify-content: space-around;
+        border-bottom: 1px solid #707070;
+        margin-bottom: 2%;
+        h1 {
+            width: 30%;
+        }
+        span {
+            width: 30%;
+            color: #cfcfcf;
+        }
+    }
+}
+.Collapsible__trigger {
+    padding: 5% 4%;
+    border-radius: 5px;
+}
+
+.list-container {
+    flex-flow: column wrap;
+    width: 100%;
+    padding: 1%;
+    justify-content: flex-start;
+    background-color: #131722c7;
+    .list-item {
+        flex-grow: 6;
+        color: #e6e6e6;
+        background: #363a43;
+        padding: 8px 12px;
+        display: content;
+        text-align: center;
+        border-radius: 8%;
+    }
+    .list-item:hover {
+        color: #fc9e74;
+    }
+}
+.Collapsible__contentInner {
+    display: flex;
+}
+@media screen and (max-width: $small-below) {
+    .Collapsible__contentInner {
+        flex-direction: column;
+        flex-grow: 2;
+        flex-wrap: wrap;
+        flex-shrink: 2;
+        .list-item {
+            order: 2;
+        }
+    }
+}

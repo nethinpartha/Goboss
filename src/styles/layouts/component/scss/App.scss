@@ -1,0 +1,38 @@
+/* App.scss * /
+/* Normalize */
+@import "~normalize-scss/sass/normalize";
+@import "~bootstrap/scss/bootstrap";
+@import "../../../variables";
+
+.appClass {
+  background-color: $black;
+  height: 100% !important;
+}
+#container {
+  overflow-x: hidden;
+  width: 100%;
+  position: relative;
+  top: 7vh;
+  height: 53vh;
+}
+main {
+  top: 0;
+}
+body {
+  height: 100%;
+  width: 100% !important;
+  min-height: 100%;
+  margin: 0;
+  background: #131722;
+}
+.icon-hamberger {
+  position: fixed;
+  height: 25px;
+  width: 25px;
+  z-index: 7;
+  width: 25px;
+  margin-left: 2rem;
+}
+.icon-hamberger:hover {
+  cursor: pointer;
+}

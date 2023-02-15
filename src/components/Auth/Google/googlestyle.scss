@@ -1,0 +1,22 @@
+.google-auth-wrapper button {
+  width: 100%;
+  border-radius: 6px;
+  margin-left: 2rem;
+  cursor: pointer;
+  font-size: 17px;
+}
+.google-signin-button {
+  border-radius: 50% !important;
+  height: 60px !important;
+  width: 60px !important;
+  background: #ffffff;
+  border: none;
+}
+
+.google-auth-wrapper {
+  transition: all 0.2s ease-in-out;
+}
+
+.google-auth-wrapper:hover {
+  transform: scale(1.1);
+}

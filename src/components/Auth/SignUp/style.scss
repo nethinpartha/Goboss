@@ -1,0 +1,35 @@
+/* Normalize */
+@import "~normalize-scss/sass/normalize";
+
+@import "../../../styles/variables";
+
+@import "../SignIn/style.scss";
+
+.stepHeader {
+    .step-indicator {
+        letter-spacing: 0.07px;
+        color: #cccccc;
+        opacity: 1;
+    }
+    p {
+        text-align: left;
+        font: normal normal normal 19px/23px Inter, serif;
+        letter-spacing: 0.19px;
+        color: #cccccc;
+    }
+    h1 {
+        text-align: left;
+        font: normal normal bold 28px/34px Inter, serif;
+        letter-spacing: 0.28px;
+        color: #cccccc;
+        opacity: 1;
+    }
+}
+.upgrade {
+    background: transparent !important;
+}
+
+.name-fields-wrapper {
+    display: flex;
+    margin-bottom: -6px;
+}

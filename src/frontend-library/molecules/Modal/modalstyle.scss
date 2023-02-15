@@ -1,0 +1,55 @@
+.authentication-modal .modal-header,
+.authentication-modal .modal-body {
+  border: none;
+}
+
+.authentication-modal {
+  .modal-header {
+    .close {
+      color: #fff;
+      span {
+        color: white;
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
+.authentication-modal .modal-content {
+  // border-radius: 2rem;
+  // box-shadow: rgba(233, 220, 220, 82%) -5px 14px 12px 8px;
+  // background-image: linear-gradient(to right bottom, rgba(26, 23, 21, 0.8), rgba(26, 23, 21, 0.8)),
+  //   url(../../../assets/wall.jpg);
+  position: relative;
+  background-size: cover;
+  background-position: top;
+  // clip-path: polygon(0 0, 100% 0, 100% 92%, 0% 96%);
+}
+
+.authentication-modal .modal-footer {
+  border: none;
+}
+
+// added following style to make modal full screen for payment method
+@media (min-width: 992px) {
+  .my-modal-lg {
+    width: auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .my-modal-dialog {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .my-modal-content {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    height: auto;
+    min-height: 100%;
+    border-radius: 0;
+  }
+}

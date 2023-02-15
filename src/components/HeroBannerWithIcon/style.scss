@@ -1,0 +1,41 @@
+/* Normalize */
+@import "~normalize-scss/sass/normalize";
+
+@import "../../styles/variables";
+
+@media screen and (max-width: $small-below) {
+    .makeStyles-root-9 {
+        width: 92%;
+    }
+    .makeStyles-root-1 {
+        width: 90% !important;
+    }
+}
+
+.apply-disabled {
+    background: #ccc;
+    border: none;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+    .home-background {
+        video {
+            bottom: 38% !important;
+        }
+        .img-wrapper {
+            min-height: 50vh;
+        }
+        .info-section {
+            bottom: 28%;
+        }
+    }
+}
+
+@media screen and (max-width: 455px) {
+    .subscriptionbtn {
+        padding: 0.5rem !important;
+    }
+    .color-sub {
+        font-size: 10px;
+    }
+}

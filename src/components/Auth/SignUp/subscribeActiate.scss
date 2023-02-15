@@ -1,0 +1,25 @@
+.subscribed-container {
+    .stepHeader {
+        text-align: center;
+        img {
+            width: "91px";
+            height: "91px";
+        }
+        p {
+            margin-bottom: 8%;
+        }
+    }
+
+    .regContainer {
+        text-align: center;
+    }
+    h3,
+    p {
+        color: black;
+        margin-bottom: 16px;
+        text-align: center;
+    }
+    .stepHeader {
+        margin-top: 33%;
+    }
+}

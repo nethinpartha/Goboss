@@ -1,0 +1,28 @@
+.ErrorPage {
+  .headerShadow {
+    position: relative;
+  }
+}
+
+.errorDiv {
+  min-height: 70vh;
+  text-align: center;
+  margin: 1% 10%;
+  padding-top: 50px;
+  a {
+    color: black;
+  }
+}
+.errorDiv h2 {
+  border: none;
+  line-height: 1rem;
+  display: center;
+  margin: 4%;
+}
+
+.errorDiv p {
+  display: center;
+  opacity: 1;
+  color: blue;
+  text-decoration: underline;
+}

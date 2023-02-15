@@ -1,0 +1,42 @@
+/* Ratings button styless*/
+
+/* Normalize */
+@import "~normalize-scss/sass/normalize";
+
+@import "../../../styles/variables";
+
+.button-container {
+    background: #fcc537 0% 0% no-repeat padding-box;
+    border-radius: 5px;
+    border: none;
+    opacity: 1;
+    width: 87px;
+    height: 31px;
+    img {
+        position: relative;
+        width: 34px;
+        top: -1px;
+        text-align: center;
+        opacity: 1;
+        left: 4px;
+    }
+}
+button span {
+    text-align: right;
+    font: normal normal bold 14px Inter, sans-serif;
+    letter-spacing: 0px;
+    color: #2a2a2a;
+    opacity: 1;
+}
+
+@media screen and (max-width: $small-below) {
+    button span {
+        font: normal normal bold 12px Inter, sans-serif;
+    }
+    .button-container {
+        height: 37px;
+        img {
+            width: 28px;
+        }
+    }
+}

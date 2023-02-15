@@ -1,0 +1,29 @@
+@media screen and (min-width: 768px) and (max-width: 2560px) {
+    .table-setup {
+        border-top: 0;
+        margin-top: 1rem;
+        margin-bottom: 4rem;
+    }
+}
+
+@media screen and (width: 768px) {
+    .table-setup {
+        margin-left: 0rem;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .heading {
+        color: #ffffff;
+        font-size: 16px;
+    }
+
+    .th {
+        font-size: 14px;
+    }
+
+    .td {
+        font-size: 13px !important;
+
+    }
+}

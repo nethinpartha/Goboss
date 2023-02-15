@@ -1,0 +1,91 @@
+.dropdown-wrapper{
+    border-bottom: 1px solid #cccc;
+    .dropdown{
+        background: transparent;
+        color: #cccccc;
+        border: none;
+        text-align: left;      
+    }    
+    .dropdown-menu{
+        background: rgb(212, 212, 212);
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 3000px) {
+    .update-btn-setup {
+        Button {
+            width: 45%;
+        }
+    }
+
+    .profile-info-setup {
+        font-size: 26px;
+    }
+
+    .dropdown-wrapper{
+        width: 159px;
+        .dropdown{
+            width: 100%;
+        }
+        .dropdown-toggle::after {
+            position: absolute;
+            left: 88%;
+            top: 50%;
+        }
+       
+        .dropdown-menu{
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 767px){
+    .dropdown-wrapper{
+        .dropdown{
+            width: 100%;
+        }
+        .dropdown-menu{
+            width: 100%;
+        }
+        .dropdown-toggle::after {
+            position: absolute;
+            left: 95%;
+            top: 50%;
+        }
+    }
+    .profile-info-setup {
+        font-size: 26px;
+    }
+
+    .update-btn {
+        width: 100%;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 575px){
+    .dropdown-wrapper{
+        .dropdown-toggle::after {
+            position: absolute;
+            left: 94%;
+            top: 50%;
+        }
+    }
+}
+@media screen and (max-width: 456px){
+    .dropdown-wrapper{
+        .dropdown-toggle::after {
+            position: absolute;
+            left: 92%;
+            top: 50%;
+        }
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .profile-info-setup {
+        font-size: 22px;
+    }
+}
+
+

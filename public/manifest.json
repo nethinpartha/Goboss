@@ -1,0 +1,42 @@
+{
+  "short_name": "Entertainment app",
+  "name": "Entertainment app",
+  "icons": [
+    {
+      "src": "tkfavicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    }
+  ],
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#131722",
+  "background_color": "#131722",
+  "shortcuts": [
+    {
+      "name": "Entertainment app",
+      "short_name": "Entertainment app",
+      "description": "Entertainment app",
+      "url": "/",
+      "icons": [
+        {
+          "src": "tkfavicon.ico",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "Entertainment app",
+      "short_name": "Entertainment app",
+      "description": "Entertainment app",
+      "url": "/",
+      "icons": [
+        {
+          "src": "tkfavicon.ico",
+          "sizes": "192x192"
+        }
+      ]
+    }
+  ],
+  "description": "Entertainment app"
+}

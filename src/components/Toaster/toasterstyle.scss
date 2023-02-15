@@ -1,0 +1,35 @@
+.toaster-wrapper {
+  position: absolute;
+  bottom: 4vh;
+  background: rgba(114, 186, 94, 0.05);
+  .toaster-alert {
+    position: fixed;
+    bottom: 2.5rem;
+    left: 0.4rem;
+    align-self: flex-end;
+    text-align: center;
+    z-index: 10040;
+    overflow: auto;
+    background: rgb(86, 77, 77);
+  }
+}
+
+.content-color {
+  color: "#ffffff";
+}
+.contet-title {
+  font-size: 14px;
+  color:#ffffff;
+}
+.content-message {
+  font-size: 12px;
+  color:#ffffff;
+}
+.alert-dismissible .close {
+  padding: 0.55rem 1.25rem;
+}
+
+.toaster-wrapper button span {
+  color: white !important;
+  font-size: 22px;
+}

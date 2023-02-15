@@ -1,0 +1,87 @@
+.profile-pic{
+cursor: pointer;
+}
+.movie-logo-home{
+  cursor: pointer;
+}
+.series-logo-home{
+  cursor: pointer;
+}
+.devices-logo-home{
+  cursor: pointer;
+}
+.user-logo-home{
+  cursor: pointer;
+}
+.logout-logo-home{
+  cursor: pointer;
+}
+
+.sidenav {
+  height: 100%;
+  width: 60px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+/* .sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+} */
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  /* .sidenav a {
+    font-size: 18px;
+  } */
+}
+
+/* .sidenav a:hover {
+  color: #f1f1f1;
+} */
+
+.nav-logo {
+  height: 35px;
+  width: 35px;
+  margin-left: 22%;
+}
+.nav-logo:hover {
+  cursor: pointer;
+}
+.profile-pic {
+  height: 40px;
+  width: 40px;
+  margin-left: 20%;
+  margin-top: 40%;
+}
+.caption {
+  display: block;
+  text-align: center;
+  color: #f1f1f1;
+  font-size: small;
+}
+.movie-logo {
+  height: 20px;
+  width: 20px;
+  margin-left: 30%;
+  margin-top: 200%;
+}
+
+.series-logo,
+.devices-logo,
+.user-logo,
+.logout-logo {
+  height: 20px;
+  width: 20px;
+  margin-left: 30%;
+  margin-top: 40%;
+}
